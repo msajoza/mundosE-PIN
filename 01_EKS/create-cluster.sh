@@ -1,0 +1,11 @@
+eksctl create cluster \
+--name eks-mundos-e \
+--region us-east-2 \
+--node-type t3.small \
+--nodes 3 \
+--with-oidc \
+--ssh-access \
+--ssh-public-key pin \
+--managed \
+--full-ecr-access \
+--zones us-east-2a,us-east-2b,us-east-2c
